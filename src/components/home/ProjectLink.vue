@@ -4,21 +4,21 @@
         <div class="buttons">
       <a
         target="_blank"
-        href="https://legionos.org"
+        href="https://project-legionos.org"
         @click="hidebar"
         class="btn"
         >Home</a
       >
       <a
         target="_blank"
-        href="https://legionos.org/stats.html"
+        href="https://project-legionos.org/stats.html"
         @click="hidebar"
         class="btn"
         >Stats</a
       >
       <a
         target="_blank"
-        href="https://blog.legionos.org"
+        href="https://blog.project-legionos.org"
         @click="hidebar"
         class="btn"
         >Blog</a
@@ -73,7 +73,7 @@ export default {
         },
         {
           title: "Be a maintainer!",
-          ref: "https://blog.legionos.org/tags/maintaining-officially/",
+          ref: "https://blog.project-legionos.org/tags/maintaining-officially/",
           svg_path:
             "M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1 10.199l-3.64 1.801 3.64 1.796v2.204l-6-2.935v-2.131l6-2.934v2.199zm8 2.866l-6 2.935v-2.204l3.64-1.796-3.64-1.801v-2.199l6 2.935v2.13z"
         }
