@@ -1,6 +1,5 @@
 <template>
   <div class="home center">
-    <h3 class="accent welcome">{{subname}}</h3>
     <Logo width="350px" />
     
     <ProjectLink/>
