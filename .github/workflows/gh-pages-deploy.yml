@@ -1,15 +1,19 @@
+
 name: Deploy to Github Pages
 on:
   push:
     branches:
       - master
+permissions:
+  contents: write
+  pull-requests: write      
 jobs:
   gh-pages-deploy:
     name: Deploying to Github Pages
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: "12"
       - name: Install packages
