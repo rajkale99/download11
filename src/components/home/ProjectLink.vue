@@ -3,21 +3,21 @@
     <Search />
         <div class="buttons">
       <a
-        target="_blank"
+        target="blank"
         href="https://project-legionos.org"
         @click="hidebar"
         class="btn"
         >Home</a
       >
       <a
-        target="_blank"
-        href="https://project-legionos.org/stats.html"
+        target="blank"
+        href="https://project-legionos.org/stats"
         @click="hidebar"
         class="btn"
         >Stats</a
       >
       <a
-        target="_blank"
+        target="blank"
         href="https://blog.project-legionos.org"
         @click="hidebar"
         class="btn"
