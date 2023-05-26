@@ -16,6 +16,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "12"
+          cname: download.project-legionos.org
       - name: Install packages
         run: npm i
       - name: Set Creds
