@@ -22,7 +22,6 @@
           <div v-if="device.active" class="deviceprop">
             <i class="material-icons">person_outline</i>
             <h6>{{device.maintainer_name}}</h6>
-            <Flag width="20px" :country="device.maintainer_country" />
           </div>
 
           <div v-if="!device.active" class="deviceprop">
@@ -31,7 +30,7 @@
           </div>
 
           <div v-if="device.xda_thread && device.active" class="card-action xda-buttons">
-            <a v-bind:href="device.maintainer_xda" target="_blank" class="waves-effect btn">XDA Profile</a>
+            <a v-bind:href="device.maintainer_xda"target="_blank" class="waves-effect btn">XDA Profile</a>
             <a v-bind:href="device.xda_thread" target="_blank" class="waves-effect btn">XDA Thread</a>
 	</div>
           <div
@@ -67,14 +66,8 @@
   </div>
 </template>
 <script>
-
-import Flag from '../common/Flag';
-
 export default {
   name: 'CardHeader',
-  components: {
-     Flag,
-  },
   computed: {
     device() {
       this.$store.dispatch('filterDevice', this.$route.params);
