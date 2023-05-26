@@ -29,8 +29,8 @@ const fetchBuilds = async (codename, variant) => {
     const res = await request(`${baseURL}/OTA/s/${codename}/official/${variant}.json`);
 
     const promises = res.response.map(async (build) => {
-      const downloads = await fetchDownloadsCount(build.filename, codename);
-      const changelog = await fetchChangelog(build.filename, codename) || "";
+      const downloads = await fetchDownloadsCount(build.filename, codename, variant);
+      const changelog = await fetchChangelog(build.filename, codename, variant) || "";
 
       return {
         ...build,
