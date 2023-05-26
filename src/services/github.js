@@ -51,7 +51,7 @@ const fetchBuilds = async (codename, variant) => {
 
 const fetchChangelog = async (codename, variant) => {
   try {
-    const res = await request(`${baseURL}/OTA/s/${codename}/changelogs_${variant}.txt`);
+    const res = await request(`https://raw.githubusercontent.com/legionos-devices/OTA/s/${codename}/changelogs_${variant}.txt`);
 
     return res.includes('404') ? 'Changelog data no found' : res;
   } catch (err) {
