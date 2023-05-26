@@ -60,7 +60,7 @@ const fetchChangelog = async (codename, variant) => {
 };
 
 const fetchROMChangelog = async () => {
-  const res = await request('https://raw.githubusercontent.com/rajkale99/OTA/s/rom_changelog.txt', false);
+  const res = await request('https://raw.githubusercontent.com/legionos-devices/OTA/s/rom_changelog.txt', false);
   return res;
 };
 
